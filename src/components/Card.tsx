@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({
   price,
 }) => {
   return (
-    <div className="flex flex-col justify-between h-full">
+    <div className="flex flex-col justify-between h-full shadow-md p-4 bg-white dark:bg-gray-800">
       <img src={image} alt={title} className="object-contain h-40 mb-4" />
       <div>
         <h2 className="text-lg font-semibold mb-2">{title}</h2>
