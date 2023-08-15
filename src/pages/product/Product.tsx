@@ -14,9 +14,9 @@ interface IProduct {
 const Product = () => {
   const { data } = useGetAllProductsQuery();
   return (
-    <div className="grid grid-cols-3">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
       {data?.map((product: IProduct) => (
-        <div key={product.id}>
+        <div key={product.id} className="bg-white p-4 rounded-lg shadow-md">
           <Card
             image={product.image}
             title={product.title}
